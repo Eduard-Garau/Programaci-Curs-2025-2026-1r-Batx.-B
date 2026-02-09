@@ -1,0 +1,118 @@
+<p><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <style>body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}</style>
+    <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<style>
+    p {
+  text-decoration-line:;
+}
+</style>
+<title>Animals Illes balears</title>
+<div class="w3-bar w3-black">             
+        <a href="../" class="w3-bar-item w3-button">Curs PTD 2025</a>
+</div>
+</head>
+<body>
+    <div class="w3-bar w3-black">             
+        <a href="../alina/" class="w3-bar-item w3-button">Alina Jutglar</a>
+        <a href="../dani/" class="w3-bar-item w3-button">Dani Almansa</a>
+        <a href="../guiem/" class="w3-bar-item w3-button">Guiem Cerdà</a>
+        <a href="../eduard/" class="w3-bar-item w3-button w3-purple">Eduard Garau</a>
+        <a href="../peresiquier/" class="w3-bar-item w3-button">Pere Siquier</a>
+        <a href="../simon/"class="w3-bar-item w3-button"> Simon</a>
+        <a href="../damia/" class="w3-bar-item w3-button">Damià</a>
+        <a href="../andreu/" class="w3-bar-item w3-button">Andreu</a>
+        <a href="../johan/" class="w3-bar-item w3-button">Johan</a>
+    </div>
+    <div class="w3-bar w3-black">
+        <a href="./ex1.html" class="w3-bar-item w3-button">Ex1</a>
+            <a href="./ex2.html" class="w3-bar-item w3-button">Ex2</a>
+            <a href="./fauna.html" class="w3-bar-item w3-button">Ex3.1</a>
+            <a href="./fauna2.html" class="w3-bar-item w3-button">Ex3.2</a>
+            <a href="./problema.html" class="w3-bar-item w3-button">Ex4</a>
+        </div>
+</body>
+    <head>
+
+    </head>
+    <body>
+        <input type="number" id="numero"><br><br>
+        <button onclick="mostra()">Mostra la Imatge</button>
+        <img src="" id="imatge">
+
+
+        <h1>Exercici 3</h1>
+        <h2>Numeros Random</h2>
+        <button onclick="mostra2()"> Mostra Numeros</button>
+
+        <p id="demo4"></p>
+
+        <script>
+            function mostra(){
+                let n = "http://aula.gimnesia.net/fotos/" + document.getElementById("numero").value + ".jpg"
+                document.getElementById("imatge").src = n
+                
+            }
+
+            const llista=[]
+            
+            i=0
+
+            while (i<80){
+            	llista[i] = Math.floor(Math.random() * 81)
+            	i++;
+            }
+            
+
+            function mostra2(){
+                let = document.getElementById("demo4").innerHTML = llista;
+            
+            }
+
+        </script>
+    </body>
+
+<body>
+
+<button onclick="mostra3()">pitja</button>
+<p id="demo4"></p>
+
+<img id="foto1"><img id="foto2"><img id="foto3"><img id="foto4"><img id="foto5"><img id="foto6"><img id="foto7"><img id="foto8"><img id="foto9">
+<img id="foto10"><img id="foto11"><img id="foto12"><img id="foto13"><img id="foto14"><img id="foto15"><img id="foto16"><img id="foto17"><img id="foto18"><img id="foto19">
+<img id="foto20"><img id="foto21"><img id="foto22"><img id="foto23"><img id="foto24"><img id="foto25"><img id="foto26"><img id="foto27"><img id="foto28"><img id="foto29">
+<img id="foto30"><img id="foto31"><img id="foto32"><img id="foto33"><img id="foto34"><img id="foto35"><img id="foto36"><img id="foto37"><img id="foto38"><img id="foto39">
+<img id="foto40"><img id="foto41"><img id="foto42"><img id="foto43"><img id="foto44"><img id="foto45"><img id="foto46"><img id="foto47"><img id="foto48"><img id="foto49">
+<img id="foto50"><img id="foto51"><img id="foto52"><img id="foto53"><img id="foto54"><img id="foto55"><img id="foto56"><img id="foto57"><img id="foto58"><img id="foto59">
+<img id="foto60"><img id="foto61"><img id="foto62"><img id="foto63"><img id="foto64"><img id="foto65"><img id="foto66"><img id="foto67"><img id="foto68"><img id="foto69">
+<img id="foto70"><img id="foto71"><img id="foto72"><img id="foto73"><img id="foto74"><img id="foto75"><img id="foto76"><img id="foto77"><img id="foto78"><img id="foto79"><img id="foto80">
+</body>
+
+<script>
+function mostra3(){
+    let i=0
+    let llista=[]
+    let foto=""
+
+    while (i<80){
+        llista[i] = Math.floor(Math.random() * 80) + 1 
+        foto = llista[i]
+        i++;
+        
+        document.getElementById("foto" + i).src="http://aula.gimnesia.net/fotos/" + foto + ".jpg";
+    }
+
+    document.getElementById("demo4").innerHTML = llista;
+}
+</script>
+
+</html>

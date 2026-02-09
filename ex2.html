@@ -1,0 +1,127 @@
+<p><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <style>body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}</style>
+    <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<style>
+    p {
+  text-decoration-line:;
+}
+</style>
+<title>Animals Illes balears</title>
+<div class="w3-bar w3-black">             
+        <a href="../" class="w3-bar-item w3-button">Curs PTD 2025</a>
+</div>
+</head>
+<body>
+    <div class="w3-bar w3-black">             
+        <a href="../alina/" class="w3-bar-item w3-button">Alina Jutglar</a>
+        <a href="../dani/" class="w3-bar-item w3-button">Dani Almansa</a>
+        <a href="../guiem/" class="w3-bar-item w3-button">Guiem Cerdà</a>
+        <a href="../eduard/" class="w3-bar-item w3-button w3-purple">Eduard Garau</a>
+        <a href="../peresiquier/" class="w3-bar-item w3-button">Pere Siquier</a>
+        <a href="../simon/"class="w3-bar-item w3-button"> Simon</a>
+        <a href="../damia/" class="w3-bar-item w3-button">Damià</a>
+        <a href="../andreu/" class="w3-bar-item w3-button">Andreu</a>
+        <a href="../johan/" class="w3-bar-item w3-button">Johan</a>
+    </div>
+    <div class="w3-bar w3-black">
+        <a href="./ex1.html" class="w3-bar-item w3-button">Ex1</a>
+            <a href="./ex2.html" class="w3-bar-item w3-button">Ex2</a>
+            <a href="./fauna.html" class="w3-bar-item w3-button">Ex3.1</a>
+            <a href="./fauna2.html" class="w3-bar-item w3-button">Ex3.2</a>
+            <a href="./problema.html" class="w3-bar-item w3-button">Ex4</a>
+        </div>
+</body>
+<html lang="ca">
+
+<h1> Excercici 2 </h1>
+
+<head>
+    
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+.numero {
+    color:red
+}
+</style>
+</head>
+<body>
+
+<h2>Calculadora Eduard</h2>
+<table style="width:100%">
+  <tr>
+  	<th>
+        <p id="operacio">Operacio:</p>
+        <p>Entrada:</p>
+        <p id="entrada"></p>
+        <p>Operadors:</p>
+        <p id="operadors"></p>
+        <p>Resultat:</p>
+        <p id="r"></p>
+    </th>
+  </tr>
+</table>
+<table style="width:100%">
+  <tr>
+    <th style="width:25%" class="numero" onclick="f(this)"id="id1"><button>1</button></th>
+    <th style="width:25%" class="numero" onclick="f(this)"><button>2</button></th> 
+    <th style="width:25%" class="numero" onclick="f(this)"><button>3</button></th>
+    <th style="width:25%" class="operacions" onclick="opera(this)"><button>+</button></th>
+  </tr>
+  <tr>
+    <th style="width:25%" onclick="f(this)"><button>4</button></th>
+    <th style="width:25%" onclick="f(this)"><button>5</button></th> 
+    <th style="width:25%" onclick="f(this)"><button>6</button></th>
+    <th style="width:25%" class="operacions" onclick="opera(this)"><button>-</button></th>
+  </tr>
+  <tr>
+    <th style="width:25%" onclick="f(this)"><button>7</button></th>
+    <th style="width:25%" onclick="f(this)"><button>8</button></th> 
+    <th style="width:25%" onclick="f(this)"><button>9</button></th>
+    <th style="width:25%" class="operacions" onclick="opera(this)"><button>*</button></th>
+  </tr>
+  <tr>
+    <th style="width:25%"><button>%</button></th>
+    <th style="width:25%" onclick="f(this)"><button>0</button></th> 
+    <th style="width:25%"><button>#</button></th>
+    <th style="width:25%" onclick="resultat(this)"><button>=</button></th>
+</tr>
+ 
+</table>
+
+</body>
+<script>
+let operacio = []
+let posicio = 0
+let operadors = []
+let r = 0
+let pos = 0
+
+function f(el){
+    document.getElementById("entrada").innerHTML += el.textContent
+    //fer que cuant pitjis el segon numero surti al costat
+}
+function opera(el){
+    document.getElementById("entrada").innerHTML
+    document.getElementById("operadors").innerHTML = (document.getElementById("entrada").innerHTML) +", "
+    document.getElementById("operacio").innerHTML = (document.getElementById("entrada").innerHTML += el.textContent) + operacio
+    document.getElementById("entrada").innerHTML = ""
+}
+while (pos<=operadors)lenght;
+        r = r + operadors[pos]
+        pos = pos + 1
+
+</script>
+</html>

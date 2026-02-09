@@ -1,0 +1,138 @@
+<p><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <style>body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}</style>
+    <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<style>
+    p {
+  text-decoration-line:;
+}
+</style>
+<title>Animals Illes balears</title>
+<div class="w3-bar w3-black">             
+        <a href="../" class="w3-bar-item w3-button">Curs PTD 2025</a>
+</div>
+</head>
+<body>
+    <div class="w3-bar w3-black">             
+        <a href="../alina/" class="w3-bar-item w3-button">Alina Jutglar</a>
+        <a href="../dani/" class="w3-bar-item w3-button">Dani Almansa</a>
+        <a href="../guiem/" class="w3-bar-item w3-button">Guiem Cerdà</a>
+        <a href="../eduard/" class="w3-bar-item w3-button w3-purple">Eduard Garau</a>
+        <a href="../peresiquier/" class="w3-bar-item w3-button">Pere Siquier</a>
+        <a href="../simon/"class="w3-bar-item w3-button"> Simon</a>
+        <a href="../damia/" class="w3-bar-item w3-button">Damià</a>
+        <a href="../andreu/" class="w3-bar-item w3-button">Andreu</a>
+        <a href="../johan/" class="w3-bar-item w3-button">Johan</a>
+    </div>
+    <div class="w3-bar w3-black">
+        <a href="./ex1.html" class="w3-bar-item w3-button">Ex1</a>
+            <a href="./ex2.html" class="w3-bar-item w3-button">Ex2</a>
+            <a href="./fauna.html" class="w3-bar-item w3-button">Ex3.1</a>
+            <a href="./fauna2.html" class="w3-bar-item w3-button">Ex3.2</a>
+            <a href="./problema.html" class="w3-bar-item w3-button">Ex4</a>
+        </div>
+</body>
+    <body>
+        <button onclick="mostra()">Fes Llista</button>
+        <p id="DEMO"></p>
+        <button onclick="triaMajors()">Fes majors</button>
+        <p id="idmajors"></p>
+        <button onclick="triaMenors()">Fes menors</button>
+        <p id="idmenors"></p>
+        <button onclick="triaPars()">Fes pars</button>
+        <p id="idpars"></p>
+        <button onclick="triaImpars()">Fes impars</button>
+        <p id="idimpars"></p>
+    </body>
+    <script>
+    let llista=[]
+    let majors=[]
+    let menors=[]
+    let pars=[]
+    let impars=[]
+
+
+    function mostra(){
+        let n=0
+        
+
+        while (n<40){
+            llista[n] = Math.floor(Math.random() * 80) + 1
+            n++;
+        }
+
+        document.getElementById("DEMO").innerHTML = llista;
+    }
+
+    function triaMajors(){
+        let n=0
+        
+
+        while (n<40){
+            if (llista[n] > 50){
+                majors.push(llista[n])
+            }
+            n++;
+            
+        }
+
+        document.getElementById("idmajors").innerHTML = majors;
+    }
+    function triaMenors(){
+        let n=0
+        
+
+        while (n<40){
+            if (llista[n] < 50){
+                menors.push(llista[n])
+            }
+            n++;
+            
+        }
+
+        document.getElementById("idmenors").innerHTML = menors;
+    }
+    function triaPars(){
+        let n=0
+        
+
+        while (n<40){
+            if (llista[n] %2==0){
+                pars.push(llista[n])
+            }
+            n++;
+            
+        }
+
+        document.getElementById("idpars").innerHTML = pars;
+    }
+    function triaImpars(){
+        let n=0
+        
+
+        while (n<40){
+            if (llista[n] %2==1){
+                impars.push(llista[n])
+            }
+            n++;
+            
+        }
+
+        document.getElementById("idimpars").innerHTML = impars;
+    }
+
+   
+    </script>
+</html>
+
+

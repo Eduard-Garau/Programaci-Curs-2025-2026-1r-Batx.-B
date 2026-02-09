@@ -1,0 +1,92 @@
+<p><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+    <style>body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}</style>
+    <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<style>
+    p {
+  text-decoration-line:;
+}
+</style>
+<title>Animals Illes balears</title>
+<div class="w3-bar w3-black">             
+        <a href="../" class="w3-bar-item w3-button">Curs PTD 2025</a>
+</div>
+</head>
+<body>
+    <div class="w3-bar w3-black">             
+        <a href="../alina/" class="w3-bar-item w3-button">Alina Jutglar</a>
+        <a href="../dani/" class="w3-bar-item w3-button">Dani Almansa</a>
+        <a href="../guiem/" class="w3-bar-item w3-button">Guiem Cerdà</a>
+        <a href="../eduard/" class="w3-bar-item w3-button w3-purple">Eduard Garau</a>
+        <a href="../peresiquier/" class="w3-bar-item w3-button">Pere Siquier</a>
+        <a href="../simon/"class="w3-bar-item w3-button"> Simon</a>
+        <a href="../damia/" class="w3-bar-item w3-button">Damià</a>
+        <a href="../andreu/" class="w3-bar-item w3-button">Andreu</a>
+        <a href="../johan/" class="w3-bar-item w3-button">Johan</a>
+    </div>
+    <div class="w3-bar w3-black">
+        <a href="./ex1.html" class="w3-bar-item w3-button">Ex1</a>
+            <a href="./ex2.html" class="w3-bar-item w3-button">Ex2</a>
+            <a href="./fauna.html" class="w3-bar-item w3-button">Ex3.1</a>
+            <a href="./fauna2.html" class="w3-bar-item w3-button">Ex3.2</a>
+            <a href="./problema.html" class="w3-bar-item w3-button">Ex4</a>
+        </div>
+</body>   
+<h1> Excercici 1 </h1>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Excercicis Javascript 1 Eduard</title>
+
+</head>
+
+<body>
+
+<h2>1. Positiu o Negatiu.</h2>
+
+<div class="box">
+
+    <input type="number" id="ex1">
+
+    <button onclick="ex1()">Comprovar</button>
+
+    <p class="res" id="res1"></p>
+
+</div>
+
+</body>
+
+<script>
+
+function ex1() {   
+
+let n = parseFloat(document.getElementById("ex1").value);
+
+let resultat=""
+
+if (n>=0) {resultat = "positiu"}
+
+else {resultat="negatiu"}
+
+document.getElementById("res1").innerText = resultat;
+alert("el resultat es "+n)
+if (n>0) {resultat = alert("El resultat es Positiu")}
+if (n<0) {resultat = alert("El resultat es Negatiu")}
+if (n==0) {resultat = alert("El resultat es Cero")}
+if (isNaN(n)) {return alert("No hi ha cap numero")}
+}
+
+</script>
+</html>
