@@ -1,6 +1,7 @@
 import pygame
 import requests
 import sys
+import random
 
 pygame.init()
 
@@ -216,9 +217,7 @@ class SudokuController:
             print("fila ", i, " ", j, "correcte")
           else:
             print("fila ", i, " ", j, "incorrecte")
-            
-        
-            
+       
 
     def show_result(self):
         if self.model.solution:
@@ -230,15 +229,39 @@ class SudokuController:
         self.backtracking()
 
     def tot1(self):
-        pass
-        #self.backtracking()
+        for i in range(9):
+            for j in range(9):
+                self.model.grid[i][j].value = 1
 
-    def ordena(self):
-        self.backtracking()
-            
-    
-    
-    
+    def repetir(self):
+        n = self.model.grid[0][0].value
+        for i in range(9):
+            for j in range(9):
+                self.model.grid[i][j].value = n
+
+    def vegades(self):
+        #llista=[]
+        p = 0
+        n = self.model.grid[0][0].value
+        for i in range (9):
+          for j in range (9):
+            #if casella == n sumar
+        #print(n, "apareix ", "p", " ", "vegades")
+            pass
+
+    def Nrandom(self):
+        LlistaR1= random.sample(range(1, 80),10)
+        print(LlistaR1)
+        LlistaR1.extend (LlistaR1)
+        random.shuffle(LlistaR1)
+        
+        contador = 0
+        for i in range(4):
+            for j in range(5):
+                self.model.grid[i][j].value = LlistaR1[contador]
+                #self.model.grid[i][j].value = LlistaR2[contador]
+                contador +=1
+
     # BACKTRACKING
     def find_empty(self):
         for i in range(9):
@@ -290,12 +313,15 @@ view = SudokuView()
 controller = SudokuController(model)
 
 buttons = [
-    Boto(10,560,120,50,"Carrega", controller.load),
-    Boto(140,560,120,50,"Comprova", controller.check),
-    Boto(270,560,120,50,"Resultat", controller.show_result),
-    Boto(400,560,120,50,"Resol", controller.solve),
-    Boto(10,640,120,50, "Tot 1", controller.tot1),
-    Boto(140,640,120,50, "Ordena", controller.ordena)
+    Boto(10,620,120,50,"Carrega", controller.load),
+    Boto(140,620,120,50,"Comprova", controller.check),
+    Boto(270,620,120,50,"Resultat", controller.show_result),
+    Boto(400,620,120,50,"Resol", controller.solve),
+    Boto(10,680,120,50, "Tot 1", controller.tot1),
+    Boto(140,680,120,50, "Repetir", controller.repetir),
+    Boto(270,680,120,50, "Nº vegades", controller.vegades),
+    Boto(400,680,120,50, "Random", controller.Nrandom),
+    Boto(10,560,510,45, "Aqui missatges", controller.solve)
 ]
 
 running = True
